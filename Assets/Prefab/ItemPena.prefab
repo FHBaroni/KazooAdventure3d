@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1134974968797206423}
   - component: {fileID: 1134974968797206416}
+  - component: {fileID: 4899160567729905921}
   - component: {fileID: 1134974968797206417}
   m_Layer: 0
   m_Name: ItemPena
-  m_TagString: Untagged
+  m_TagString: Pena
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,6 +48,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.39431873, y: 0.7369487, z: 0.41686088}
   m_Center: {x: 0.026526168, y: 0.051947117, z: -0.01725877}
+--- !u!114 &4899160567729905921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134974968797206418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6f27686864b4f4fa45915dac502e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particula: {fileID: 9035781606533362688, guid: c8aa3bb937559964ea80938e0449ac04,
+    type: 3}
+  cor: {r: 0.7457631, g: 0.5030705, b: 0.8018868, a: 1}
 --- !u!114 &1134974968797206417
 MonoBehaviour:
   m_ObjectHideFlags: 0

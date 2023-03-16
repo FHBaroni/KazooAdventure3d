@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3627700560198200190}
   m_Layer: 0
   m_Name: OvoMesh
-  m_TagString: Untagged
+  m_TagString: Ovo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,9 +114,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8478931525099058644}
   - component: {fileID: 6728932472243105259}
+  - component: {fileID: -8201961555081817292}
   m_Layer: 0
   m_Name: ItemOvo
-  m_TagString: Untagged
+  m_TagString: Ovo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,3 +151,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.4771824, z: 1}
   m_Center: {x: 0, y: 0.7157736, z: 0}
+--- !u!114 &-8201961555081817292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8478931525099058645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6f27686864b4f4fa45915dac502e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particula: {fileID: 9035781606533362688, guid: c8aa3bb937559964ea80938e0449ac04,
+    type: 3}
+  cor: {r: 0.16037735, g: 0.49754274, b: 0.6415094, a: 1}
