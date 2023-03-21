@@ -27,8 +27,9 @@ public class PegaItem : MonoBehaviour
                 case "Ovo": objetoPrincicpal.SendMessage("PegaOvo"); break;
                 case "Pena": objetoPrincicpal.SendMessage("PegaPena"); break;
                 case "Estrela": objetoPrincicpal.SendMessage("PegaEstrela"); break;
-                case "Fogo": objetoPrincicpal.SendMessage("EfeitoPancada"); break;
+                case "Fogo": objetoPrincicpal.SendMessage("EventoPancdada"); break;
                 case "Finish": objetoPrincicpal.SendMessage("CaiNoBuraco"); break;
+                case "Oculos": objetoPrincicpal.SendMessage("ativaOculos"); break;
                 default: break;
             }
         }
@@ -38,8 +39,8 @@ public class PegaItem : MonoBehaviour
             minhaParticula.transform.position = transform.position;
             MainModule mainModule = minhaParticula.GetComponent<ParticleSystem>().main;
             mainModule.startColor = cor;
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
        
     }
 }

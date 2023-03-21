@@ -26,8 +26,9 @@ public class ControleNormalizado : MonoBehaviour
     void Start()
     {
         ccPlayer = GetComponent<CharacterController>();
-        animacaoJogador = jogador.GetComponent<Animation>();
+        animacaoJogador = jogador.GetComponent<Animation>();        
         TransformCamera = Camera.main.transform;
+        Camera.main.gameObject.SetActive(false);
     }
 
     void Update()
@@ -39,7 +40,6 @@ public class ControleNormalizado : MonoBehaviour
         else
         {
             grounded = false;
-
         }
         moveCameraFrente = Vector3.Scale(TransformCamera.forward, new Vector3(1, 0, 1)).normalized;
         objetoMove = Input.GetAxis("Vertical") * moveCameraFrente + Input.GetAxis("Horizontal") * TransformCamera.right;
