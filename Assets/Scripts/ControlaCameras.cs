@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class ControlaCameras : MonoBehaviour
 {
-    GameObject cameraJogo;
+    public GameObject cameraJogo;
     void Start()
     {
-        cameraJogo = GameObject.Find("CameraJogo");
+      //  cameraJogo = GameObject.Find("CameraJogo ");
         //cameraJogo.SetActive(false);
     }
 
     // Update is called once per frame
     public void MudaCamera()
     {
-        cameraJogo.SetActive(true);
-        gameObject.SetActive(false);
+        print("show");
+       cameraJogo.SetActive(true);
+    this.gameObject.SetActive(false);
     }
 }
